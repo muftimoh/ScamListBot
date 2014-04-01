@@ -1,13 +1,13 @@
 subreddit="loans"
 import csv
 scammers=[]
-read=csv.reader(open('bhw_usernames_passwords_sample.csv','r'))
+read=csv.reader(open('bhw_usernames','r'))
 for item in read:
 scammers.append(item[0])
 message="""
 
 
- Hello! I am /u/loanBot . I am here to tell you that the poster is a known scammer
+ Hello! I am /u/scamlist . I am here to tell you that the poster is a known scammer
 
 
  """ #Edit the text between the """ and the other """ for the message. Use reddit formatting
